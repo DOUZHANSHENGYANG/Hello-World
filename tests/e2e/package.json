@@ -1,0 +1,15 @@
+{
+  "name": "@tests/e2e",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "format:check": "echo \"format check delegated to editor/pre-commit\"",
+    "lint": "echo \"no e2e lint configured yet\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "wait-on": "^8.0.3"
+  }
+}
