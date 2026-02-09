@@ -1,0 +1,19 @@
+{
+  "name": "vue3-springboot-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo starter for Vue3 + SpringBoot + MyBatis-Plus + SQLite with engineering standards.",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "build": "pnpm -r build",
+    "test:e2e": "pnpm --filter @tests/e2e test",
+    "format:check": "pnpm -r format:check"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "vue-demi"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+# Node / pnpm
+node_modules/
+.pnpm-store/
+.npm-cache/
+
+# Build artifacts
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Java / Maven
+**/target/
+.m2/
+*.log
+
+# SQLite
+apps/api/data/*.db
+apps/api/data/*.db-*
+
+# Environment files
+.env
+.env.*
+!.env.example
