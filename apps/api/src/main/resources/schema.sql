@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS sys_user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL UNIQUE,
+  display_name TEXT NOT NULL,
+  email TEXT,
+  status INTEGER NOT NULL DEFAULT 1,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);

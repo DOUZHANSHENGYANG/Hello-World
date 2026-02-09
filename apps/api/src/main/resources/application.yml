@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: engineering-platform-api
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:apps/api/data/app.db
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+  jackson:
+    time-zone: UTC
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8080
